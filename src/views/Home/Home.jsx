@@ -12,7 +12,7 @@ const Home = () => {
                 <div className='h-[300px] w-[70%] flex  justify-center gap-5 flex-col'>
                     <h1 className='text-5xl text-white font-bold'>Create Your Professional Resume</h1>
                     <p className='text-1xl text-gray-300 font-bold mt-[5px]'>Stand out from the crowd with our professionally designed resume<br></br> templates. Perfect for freshers and experienced professionals.</p>
-                    <Link to={'/BuildResume'}>
+                    <Link to={'/Build-Resume'}>
                         <button className='get-started-btn h-[50px] w-[170px] rounded-[10px] text-amber-50 font-bold cursor-pointer flex gap-2 items-center justify-center border-2 border-white hover:scale-120 transition-all duration-300 '><i class="fa-solid fa-rocket"></i>Start Building</button>
                     </Link>
 
