@@ -1,0 +1,26 @@
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.get-started-btn {
+    background: linear-gradient(90deg, purple, #0043df);
+}
+
+.main-heading2 {
+    background: linear-gradient(90deg, #004cff, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.cards {
+    box-shadow: 5px 5px 10px rgb(177, 177, 177);
+
+    &:hover {
+        box-shadow: 5px 5px 20px rgb(200, 200, 200);
+        transform: translateY(-5px);
+        transition: all 0.5s ease-in-out;
+
+    }
+}

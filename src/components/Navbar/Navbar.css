@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&display=swap');
+
+body {
+    font-family: "Mozilla Headline", sans-serif;
+}
+
+.main-heading {
+    font-size: 2rem;
+    font-weight: bolder;
+    background: linear-gradient(90deg, #004cff, purple);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    animation: bounce 1s ease-in-out infinite normal;
+}
+
+.pdf-btn {
+    color: white;
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.login-btn {
+    color: white;
+    background: linear-gradient(#004cff, #7900eb);
+
+    &:hover {
+        background: linear-gradient(#7900eb, #004cff);
+        box-shadow: 2px 2px 10px rgb(228, 228, 228);
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.05);
+    }
+}
+
+.nav-anchor {
+    &:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-10px);
+        transition: all ease-in-out 0.1s;
+    }
+
+    100% {
+        transform: translateY(px);
+        transition: all ease-in-out 0.1s;
+    }
+}
