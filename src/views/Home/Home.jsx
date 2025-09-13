@@ -9,15 +9,15 @@ const Home = () => {
         <>
 
             <div className='w-full bg-gradient-to-r from-blue-600 to-purple-700 mt-5 p-8 md:p-0 md:h-[300px] flex items-center justify-center'>
-                <div className='w-full lg:w-[70%] flex justify-center gap-5 flex-col text-center md:text-left relative'>
+                <div className='w-full lg:w-[70%] flex justify-center gap-4 flex-col text-center md:text-left relative mx-auto'>
                     <h1 className='text-3xl md:text-5xl text-white font-bold'>Create Your Professional Resume</h1>
                     <p className='text-lg text-gray-300 font-bold mt-2'>Stand out from the crowd with our professionally designed resume templates. Perfect for freshers and experienced professionals.</p>
                     <Link to={'/Build-Resume'}>
                         <button className='get-started-btn h-[50px] w-[170px] rounded-[10px] text-amber-50 font-bold cursor-pointer flex gap-2 items-center justify-center border-2 border-white hover:scale-110 transition-all duration-300 mx-auto md:mx-0 mt-4'><i className="fa-solid fa-rocket"></i>Start Building</button>
                     </Link>
 
-                    <div className='hidden lg:block h-[180px] w-[180px] bg-amber-800 absolute top-1/2 -translate-y-1/2 right-0 rounded-[10px] overflow-hidden'>
-                        <img src={logo} alt="logo" className='h-full w-full object-cover'></img>
+                    <div className='hidden lg:block h-[180px] w-[180px] absolute top-1/2 -translate-y-1/2 right-0 rounded-[10px] overflow-hidden ml-10'>
+                        <img src={logo} alt="logo" className='h-full w-full object-cover '></img>
                     </div>
                 </div>
             </div>
