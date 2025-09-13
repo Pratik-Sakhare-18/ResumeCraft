@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Home from './views/Home/Home'
@@ -23,8 +23,6 @@ const App = () => {
           <Route path='/template/fresher-2' element={<FresherT2 />} />
           <Route path='/template/experienced-1' element={<ExperiencedT1 />} />
         </Routes>
-        
-
       <Footer />
     </>
   )
