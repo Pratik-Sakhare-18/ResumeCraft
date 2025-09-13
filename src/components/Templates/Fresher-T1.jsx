@@ -14,7 +14,7 @@ const Fresher1T = () => {
             [e.target.name]: e.target.value
         });
     }
-    
+
     return (
         <>
             <div className='h-[auto]  w-screen flex justify-center gap-10 pt-10 pb-10'>
@@ -24,11 +24,11 @@ const Fresher1T = () => {
                     <input type='text' name="name" value={formData.name} onChange={UpdatePreview} placeholder='+ Your Name' className='h-[45px] w-[80%] rounded-[7px]  flex items-center justify-center text-center outline-none p-5 placeholder:text-white font-bold bg-blue-700 hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'></input>
                     <input type='text' name="title" value={formData.title} onChange={UpdatePreview} placeholder='+ Your Title' className=' h-[45px] w-[80%] rounded-[7px]  flex items-center justify-center text-center  outline-none p-5 placeholder:text-white font-bold bg-blue-700 hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'></input>
                     <input type='text' name="location" value={formData.location} onChange={UpdatePreview} placeholder='+ Your Location' className=' h-[45px] w-[80%] rounded-[7px]  flex items-center justify-center text-center  outline-none p-5 placeholder:text-white font-bold bg-blue-700 hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'></input>
-                    <button  className='h-[45px] w-[80%] rounded-[7px] font-bold bg-blue-700 text-white hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'>+ Add Experience</button>
-                    <button  className='h-[45px] w-[80%] rounded-[7px] font-bold bg-blue-700 text-white hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'>+ Add Education</button>
-                    <button  className='h-[45px] w-[80%] rounded-[7px] font-bold bg-blue-700 text-white hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'>+ Add Projects</button>
+                    <button className='h-[45px] w-[80%] rounded-[7px] font-bold bg-blue-700 text-white hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'>+ Add Experience</button>
+                    <button className='h-[45px] w-[80%] rounded-[7px] font-bold bg-blue-700 text-white hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'>+ Add Education</button>
+                    <button className='h-[45px] w-[80%] rounded-[7px] font-bold bg-blue-700 text-white hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'>+ Add Projects</button>
                     <button className='h-[45px] w-[80%] rounded-[7px] font-bold bg-blue-700 text-white hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'>+ Add Skills</button>
-                    <button  className='h-[45px] w-[80%] rounded-[7px] font-bold bg-blue-700 text-white hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'>+ Add Certifications</button>
+                    <button className='h-[45px] w-[80%] rounded-[7px] font-bold bg-blue-700 text-white hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'>+ Add Certifications</button>
                     <button className='h-[45px] w-[80%] rounded-[7px] font-bold bg-gradient-to-r from-blue-700 to-pink-700 text-white flex gap-2 items-center justify-center cursor-pointer  hover:scale-110 hover:transition-all duration-5s ease-in-out'><i class="fa-solid fa-download"></i>Download PDF</button>
 
                 </div>
@@ -40,8 +40,8 @@ const Fresher1T = () => {
                         <input type='text' name="title" value={formData.title} onChange={UpdatePreview} placeholder='Your Title' className=' h-[30px] w-[80%] bg-transparent font-bold text-center placeholder:text-white text-white text-[18px] outline-none'></input>
                         <input type='text' name="location" value={formData.location} onChange={UpdatePreview} placeholder='📍 Your Location' className=' h-[30px] w-[80%] bg-transparent font-bold text-center placeholder:text-white text-gray-200 text-[14px] outline-none'></input>
                         <div className='flex gap-5 mt-2'>
-                            <button className='h-[40px] w-[120px] bg-white font-bold text-blue-600 rounded-[7px] flex justify-center items-center gap-2 cursor-pointer hover:bg-blue-700 hover:text-white transition-all duration-300'><i class="fa-solid fa-user"></i> Linkdin</button>
-                            <button className='h-[40px] w-[120px] bg-white font-bold text-blue-600 rounded-[7px] flex justify-center items-center gap-2 cursor-pointer hover:bg-blue-700 hover:text-white transition-all duration-300'>💻 GitHub</button>
+                            <input type='text' placeholder=' Linkdin' className='h-[40px] w-[160px] bg-white font-bold placeholder:text-blue-600 text-center text-blue-600 rounded-[7px] flex justify-center items-center gap-2 cursor-pointer hover:bg-blue-700 hover:text-white transition-all duration-300'></input>
+                            <input type='text' placeholder='💻 GitHub' className='h-[40px] w-[160px] bg-white font-bold placeholder:text-blue-600 text-center text-blue-600 rounded-[7px] flex justify-center items-center gap-2 cursor-pointer hover:bg-blue-700 hover:text-white transition-all duration-300'></input>
                         </div>
 
                     </div>
