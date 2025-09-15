@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react'
 
-const Template = () => {
+const BuildResume = () => {
 
   const [formData, setFormData] = useState({
     name: "",
@@ -26,14 +26,15 @@ const Template = () => {
     });
   };
 
+ 
+
   return (
     <>
 
-      <div className='h-[180vh] w-screen flex  justify-center flex-row gap-15 mt-10'>
+      <div className="w-screen flex flex-col lg:flex-row justify-center items-center lg:items-start mt-10 gap-10 p-4">
+        <div className="h-auto py-10 w-full max-w-md lg:w-[25%] bg-gradient-to-b from-blue-700 to-purple-800 shadow-2xl shadow-gray-400 rounded-[10px] flex flex-col items-center justify-center gap-3">
 
-        <div className='h-[170vh] w-[25%] bg-gradient-to-b from-blue-700 to-purple-800  shadow-2xl shadow-gray-400 rounded-[10px] flex  flex-col items-center justify-center gap-3 '>
-
-          <h1 className='h-[60px] w-[60%]  text-white font-bold text-2xl border-b-4 border-b-cyan-400 flex items-center justify-center  rounded-[10px]'>Resume Controls</h1>
+          <h1 className='h-[60px] w-4/5 md:w-[50%] text-white font-bold text-2xl border-b-4 border-b-cyan-400 flex items-center justify-center rounded-[10px]'>Resume Controls</h1>
 
           <input type="text" name="name" value={formData.name} onChange={UpdatePreview} placeholder='+ Your Name' className='bg-white outline-none h-[45px] w-[65%] p-5 pt-5 rounded-[10px] placeholder:text-[14px] font-bold placeholder:text-blue-800 hover:scale-110 transition-all duration-1000 ease-in-out'></input>
           <input type="email" name="email" value={formData.email} onChange={UpdatePreview} placeholder='+ Email' className='bg-white outline-none h-[45px] w-[65%] p-5 pt-5 rounded-[10px] placeholder:text-[14px] font-bold placeholder:text-blue-800 hover:scale-110 transition-all duration-1000 ease-in-out'></input>
@@ -63,28 +64,28 @@ const Template = () => {
 
         </div>
 
-        <div  className='h-[165vh] w-[55%] bg-white shadow-2xl shadow-gray-400 rounded-[10px] flex items-center justify-center flex-col gap-2'>
+        <div className="h-auto pb-10 w-full lg:w-[55%] bg-white shadow-2xl shadow-gray-400 rounded-[10px] flex items-center justify-center flex-col gap-2">
 
-          <div className='h-[200px] w-[85%] border-b-2 border-gray-300 mt-5'>
+          <div className='h-auto pb-5 w-[85%] border-b-2 border-gray-300 mt-5'>
             <form className='form'>
-              <input type='text' name="name" value={formData.name} onChange={UpdatePreview} placeholder='Your Name' className='h-[70px] w-[100%] font-bold text-center text-blue-700 text-5xl caret-blue-900 outline-none placeholder:text-blue-600' />
-              <input type='text' name="title" value={formData.title} onChange={UpdatePreview} placeholder='Professional Title' className='h-[50px] w-[100%] font-bold text-center text-blue-950 text-2xl caret-blue-900 outline-none placeholder:text-blue-900' />
-              <div className='h-[60px] w-[100%] flex items-center justify-center gap-1'>
-                <input type='email' name="email" value={formData.email} onChange={UpdatePreview} placeholder='example123@gmail.com' className='h-[50px] w-[30%] text-center placeholder:text-black text-black outline-none' />
-                <input type='tel' name="phone" value={formData.phone} onChange={UpdatePreview} placeholder='+1 234 567 890' className='h-[50px] w-[20%] text-center placeholder:text-black text-black outline-none' />
-                <input type='text' name="location" value={formData.location} onChange={UpdatePreview} placeholder='city, country' className='h-[50px] w-[25%] text-center placeholder:text-black text-black outline-none' />
+              <input type='text' name="name" value={formData.name} onChange={UpdatePreview} placeholder='Your Name' className='h-auto w-full font-bold text-center text-blue-700 text-4xl md:text-5xl caret-blue-900 outline-none placeholder:text-blue-600' />
+              <input type='text' name="title" value={formData.title} onChange={UpdatePreview} placeholder='Professional Title' className='h-auto w-full font-bold text-center text-blue-950 text-xl md:text-2xl caret-blue-900 outline-none placeholder:text-blue-900 mt-2' />
+              <div className='h-auto w-full flex flex-col md:flex-row items-center justify-center  md:gap-4 mt-2'>
+                <input type='email' name="email" value={formData.email} onChange={UpdatePreview} placeholder='example123@gmail.com' className='h-auto w-full md:w-[210px]  text-center placeholder:text-black text-black outline-none' />
+                <input type='tel' name="phone" value={formData.phone} onChange={UpdatePreview} placeholder='+1 234 567 890' className='h-auto w-full md:w-[150px] text-center placeholder:text-black text-black outline-none' />
+                <input type='text' name="location" value={formData.location} onChange={UpdatePreview} placeholder='city, country' className='h-auto w-full md:w-[120px] text-center placeholder:text-black text-black outline-none' />
               </div>
             </form>
           </div>
 
-          <form className='h-[150px] w-[85%] border-b-2 border-gray-300'>
+          <form className='h-auto pb-5 w-[85%] border-b-2 border-gray-300'>
             <h2 className='font-bold  text-blue-700 text-2xl mt-5'>PROFESSIONAL SUMMARY</h2>
             <input type='text' name="summary" value={formData.summary} onChange={UpdatePreview} placeholder=' A results-driven professional with expertise in... [Your key strengths and career highlights]' className='h-[50px] w-[100%] border-2 border-gray-200 rounded-[5px] p-5 mt-5'></input>
           </form>
 
-          <div className='h-[285px] w-[85%] border-b-2 border-gray-300 flex gap-5 flex-col'>
+          <div className='h-auto pb-5 w-[85%] border-b-2 border-gray-300 flex gap-5 flex-col'>
             <h2 className='font-bold  text-blue-700 text-2xl mt-5'>WORK EXPERIENCE</h2>
-            <form className='h-[180px] w-[100%] bg-sky-100 rounded-[10px] hover:translate-y-[-6px] transition-all duration-1000 ease-in-out'>
+            <form className='h-auto p-4 w-full bg-sky-100 rounded-[10px] hover:translate-y-[-6px] transition-all duration-1000 ease-in-out'>
               <input type='text' name="position" value={formData.position} onChange={UpdatePreview} placeholder='Senior Position' className='h-[35px] w-[100%] placeholder:text-blue-600 text-blue-600 text-[20px] pl-3 mt-4 bg-transparent outline-none'></input>
               <input type='text' name="company" value={formData.company} onChange={UpdatePreview} placeholder='Company Name | 2020 - Present' className='h-[35px] w-[100%] placeholder:text-blue-600 text-blue-700 text-[16px] pl-3 bg-transparent outline-none'></input>
               <input type='text' name="exp1" value={formData.exp1} onChange={UpdatePreview} placeholder='• Led cross-functional teams to deliver high-impact projects' className='h-[35px] w-[100%] placeholder:text-black text-black pl-3 bg-transparent outline-none'></input>
@@ -92,9 +93,9 @@ const Template = () => {
             </form>
           </div>
 
-          <div className='h-[285px] w-[85%] border-b-2 border-gray-300 flex gap-5 flex-col'>
+          <div className='h-auto pb-5 w-[85%] border-b-2 border-gray-300 flex gap-5 flex-col'>
             <h2 className='font-bold  text-blue-700 text-2xl mt-5'>EDUCATION</h2>
-            <form className='h-[180px] w-[100%]  bg-sky-100 rounded-[10px] hover:translate-y-[-6px] transition-all duration-1000 ease-in-out'>
+            <form className='h-auto p-4 w-full bg-sky-100 rounded-[10px] hover:translate-y-[-6px] transition-all duration-1000 ease-in-out'>
               <input type='text' name="degree" value={formData.degree} onChange={UpdatePreview} placeholder='Bachelor of Science in Computer Science' className='h-[35px] w-[100%] placeholder:text-black text-black text-[20px] pl-5 mt-4 bg-transparent outline-none'></input>
               <input type='text' name="university" value={formData.university} onChange={UpdatePreview} placeholder='University Name | 2016 - 2020' className='h-[35px] w-[100%] placeholder:text-blue-800 text-blue-800 text-[16px] pl-6 bg-transparent outline-none'></input>
               <input type='text' name="gpa" value={formData.gpa} onChange={UpdatePreview} placeholder='• Graduated with Honors (GPA: 9.1/9.1)' className='h-[35px] w-[100%] placeholder:text-black text-black pl-5 bg-transparent outline-none'></input>
@@ -102,7 +103,7 @@ const Template = () => {
             </form>
           </div>
 
-          <div className='h-[200px] w-[85%]  rounded-[10px] '>
+          <div className='h-auto pb-5 w-[85%] rounded-[10px]'>
             <h2 className='font-bold  text-blue-700 text-2xl mt-5'>SKILLS</h2>
             <form className='h-auto] w-[100%]  border-gray-300 flex   gap-2 flex-wrap'>
               <input type='text' name="skill" value={formData.skill} onChange={UpdatePreview} placeholder='Project Management' className='h-[40px] w-[150px] bg-sky-200 border-2 border-gray-300 font-bold placeholder-blue-700 text-blue-500 text-[13px] pl-2 pr-2 mt-4 rounded-2xl outline-none text-center hover:scale-105 transition-all duration-1000 ease-in-out'></input>
@@ -121,4 +122,4 @@ const Template = () => {
   )
 }
 
-export default Template;
+export default BuildResume;

@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Home.css'
 import logo from '../../assets/resume-craft.png'
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
         <>
 
             <div className='w-full bg-gradient-to-r from-blue-600 to-purple-700 mt-5 p-8  md:p-0 md:h-[300px] flex items-center justify-center '>
-                <div className='w-full lg:w-[75%] flex justify-center  gap-4 flex-col text-center md:text-left relative mx-auto'>
+                <div className='w-full lg:w-[75%] flex justify-center gap-4 flex-col text-center md:text-left relative mx-auto'>
                     <h1 className='text-3xl md:text-5xl text-white font-bold'>Create Your Professional Resume</h1>
                     <p className='text-lg text-gray-300 font-bold mt-2'>Stand out from the crowd with our professionally designed resume templates. Perfect for freshers and <br/>experienced professionals.</p>
                     <Link to={'/Build-Resume'}>
@@ -24,24 +23,24 @@ const Home = () => {
 
             <div className='w-full bg-white flex items-center justify-center flex-col gap-8 py-12 px-4'>
                 <h1 className='main-heading2 text-3xl md:text-5xl font-bold text-center'>What Makes ResumeCraft Different?</h1>
-                <div className='w-full flex items-center justify-center gap-8 md:gap-12 lg:gap-20 flex-wrap'>
-                    
-                    <div className='cards h-auto md:h-[130px] w-full sm:w-[40%] md:w-[20%] lg:w-[17%] bg-white shadow-lg shadow-gray-400 rounded-[10px] border-b-4 border-blue-700 flex items-center justify-center flex-col gap-2 p-4'>
+                <div className='w-full lg:w-4/5 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-16 '>
+
+                    <div className='cards h-auto md:h-[140px] w-full md:w-[25%]  bg-white shadow-lg shadow-gray-400 rounded-[10px] border-b-4 border-blue-700 flex items-center justify-center flex-col gap-2 p-4'>
                         <h2 className='text-[20px] font-bold text-blue-800'>⚡Quick & Simple</h2>
                         <p className='text-gray-500 text-[14px] text-center'>Our easy editor lets you build resumes faster than ever before.</p>
                     </div>
 
-                    <div className='cards h-auto md:h-[130px] w-full sm:w-[40%] md:w-[20%] lg:w-[17%] bg-white shadow-lg shadow-gray-400 rounded-[10px] border-b-4 border-blue-700 flex items-center justify-center flex-col gap-2 p-4'>
+                    <div className='cards h-auto md:h-[13=40px] w-full md:w-[25%] bg-white shadow-lg shadow-gray-400 rounded-[10px] border-b-4 border-blue-700 flex items-center justify-center flex-col gap-2 p-4'>
                         <h2 className='text-[20px] font-bold text-blue-800'>🎨 Stylish Templates</h2>
                         <p className='text-gray-500 text-[14px] text-center'>Choose from modern designs tailored to your career field.</p>
                     </div>
 
-                    <div className='cards h-auto md:h-[130px] w-full sm:w-[40%] md:w-[20%] lg:w-[17%] bg-white shadow-lg shadow-gray-400 rounded-[10px] border-b-4 border-blue-700 flex items-center justify-center flex-col gap-2 p-4'>
+                    <div className='cards h-auto md:h-[140px] w-full md:w-[25%] bg-white shadow-lg shadow-gray-400 rounded-[10px] border-b-4 border-blue-700 flex items-center justify-center flex-col gap-2 p-4'>
                         <h2 className='text-[20px] font-bold text-blue-800'>📥 Instant Download</h2>
                         <p className='text-gray-500 text-[14px] text-center'>Export your resume in high-quality PDF format instantly.</p>
                     </div>
 
-                    <div className='cards h-auto md:h-[130px] w-full sm:w-[40%] md:w-[20%] lg:w-[17%] bg-white shadow-lg shadow-gray-400 rounded-[10px] border-b-4 border-blue-700 flex items-center justify-center flex-col gap-2 p-4'>
+                    <div className='cards h-auto md:h-[140px] w-full  md:w-[25%]  bg-white shadow-lg shadow-gray-400 rounded-[10px] border-b-4 border-blue-700 flex items-center justify-center flex-col gap-2 p-4'>
                         <h2 className='text-[20px] font-bold text-blue-800'>💼 Job-Ready</h2>
                         <p className='text-gray-500 text-[14px] text-center'>Resumes designed to pass ATS filters and impress employers.</p>
                     </div>

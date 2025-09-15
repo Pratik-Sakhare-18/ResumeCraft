@@ -10,19 +10,19 @@ const ChooseT = () => {
     return (
         <>
 
-            <div className='h-auto w-screen bg-white flex justify-center items-center flex-col gap-5'>
+            <div className='h-auto w-screen bg-white flex justify-center items-center flex-col gap-5 p-4 md:p-0'>
 
-                <div className='h-[300px] w-[100%] bg-sky-50 flex items-center justify-center flex-col gap-2'>
+                <div className='h-auto md:h-[300px] w-[100%] bg-sky-50 flex items-center justify-center flex-col gap-2 p-6 md:p-2'>
                     <h1 className='text-4xl font-bold text-center'>Choose Your Template</h1>
                     <div className='h-[4px] w-[340px] bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl'></div>
                     <p className='text-gray-500 text-center text-[16px] mt-5'>Select from our collection of professionally designed templates. Whether you're a fresher or an<br /> experienced professional, we have the perfect template for you.</p>
                     <Link to="/template/fresher-1">
-                        <button className='h-[60px] w-[200px] rounded-[10px]  bg-gradient-to-r from-blue-700 to-pink-600 text-white font-bold cursor-pointer hover:bg-gradient-to-r hover:from-pink-600 hover:to-blue-600 mt-5 shadow-2xs shadow-gray-600'>Freshers Template</button>
+                        <button className='h-[60px] w-[200px] rounded-[10px] bg-gradient-to-r from-blue-700 to-pink-600 text-white font-bold cursor-pointer hover:bg-gradient-to-r hover:from-pink-600 hover:to-blue-600 mt-5 shadow-2xs shadow-gray-600'>Freshers Template</button>
                     </Link>
 
                 </div>
 
-                <div className='h-[650px] w-screen bg-white flex gap-10 justify-center items-center'>
+                <div className='h-auto w-screen bg-white flex flex-col md:flex-row gap-10 justify-center items-center'>
 
                     <div className='h-[600px] w-[350px] bg-white rounded-tr-3xl rounded-bl-3xl rounded-tl-[5px] rounded-br-[5px] flex items-center justify-center flex-col overflow-hidden shadow-xl shadow-gray-200'>
                         <div className='h-[360px] w-[100%] bg-gray-100 overflow-hidden'>
@@ -54,7 +54,7 @@ const ChooseT = () => {
 
                 <button className='h-[60px] w-[200px] rounded-[10px]  bg-gradient-to-r from-blue-700 to-pink-600 text-white font-bold cursor-pointer hover:bg-gradient-to-r hover:from-pink-600 hover:to-blue-600 mt-5 shadow-2xs shadow-gray-600'>Experienced Template</button>
 
-                <div className='h-[650px] w-screen bg-white flex gap-10 justify-center items-center'>
+                <div className='h-auto w-screen bg-white flex flex-col md:flex-row gap-10 justify-center items-center'>
 
                     <div className='h-[600px] w-[350px] bg-white rounded-tr-3xl rounded-bl-3xl rounded-tl-[5px] rounded-br-[5px] flex items-center justify-center flex-col overflow-hidden shadow-xl shadow-gray-200'>
                         <div className='h-[360px] w-[100%] bg-gray-100 overflow-hidden'>

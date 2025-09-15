@@ -106,9 +106,9 @@ const Fresher1T = () => {
 
     return (
         <>
-            <div className='h-[auto]  w-screen flex justify-center gap-10 pt-10 pb-10'>
+            <div className='h-auto w-screen flex flex-col lg:flex-row justify-center items-center lg:items-start gap-10 pt-10 pb-10 px-4'>
 
-                <div className='h-[600px] w-[290px] bg-blue-900 rounded-[7px] flex flex-col items-center justify-center gap-3 shadow-2xl shadow-gray-400'>
+                <div className='h-auto w-full max-w-md lg:w-[290px] lg:h-[600px] bg-blue-900 rounded-[7px] flex flex-col items-center justify-center gap-3 shadow-2xl shadow-gray-400 p-4'>
                     <h1 className='font-bold text-[20px] text-white'>RESUME CONTROLS</h1>
                     <input type='text' name="name" value={formData.name} onChange={UpdatePreview} placeholder='+ Your Name' className='h-[45px] w-[80%] rounded-[7px]  flex items-center justify-center text-center outline-none p-5 placeholder:text-white font-bold bg-blue-700 hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'></input>
                     <input type='text' name="title" value={formData.title} onChange={UpdatePreview} placeholder='+ Your Title' className=' h-[45px] w-[80%] rounded-[7px]  flex items-center justify-center text-center  outline-none p-5 placeholder:text-white font-bold bg-blue-700 hover:bg-sky-500 hover:scale-110 hover:transition-all duration-5s ease-in-out'></input>
@@ -122,7 +122,7 @@ const Fresher1T = () => {
 
                 </div>
 
-                <div className='h-[auto] w-[50%] bg-white shadow-2xl shadow-gray-400 rounded-[10px] flex flex-col items-center justify-center gap-4 pt-12 pb-12'>
+                <div className='h-auto w-full lg:w-[50%] bg-white shadow-2xl shadow-gray-400 rounded-[10px] flex flex-col items-center justify-center gap-4 pt-12 pb-12'>
 
                     <div className='h-[220px] w-[85%]  bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl  flex flex-col items-center justify-center '>
                         <input type='text' name="name" value={formData.name} onChange={UpdatePreview} placeholder='Your Name' className='h-[60px] w-[100%] bg-transparent font-bold text-center placeholder:text-white text-white text-5xl  outline-none'></input>

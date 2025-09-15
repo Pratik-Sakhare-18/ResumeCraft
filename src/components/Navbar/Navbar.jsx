@@ -10,7 +10,7 @@ const Navbar = () => {
         <>
             <div className='h-auto w-full bg-white-500 shadow-2xl shadow-gray-200 flex flex-wrap items-center justify-between p-4 md:h-[80px] md:flex-nowrap flex-row'>
 
-                <div className='h-auto w-auto bg-white-500 flex items-center justify-center gap-5  ml-10 '>
+                <div className='h-auto w-auto bg-white-500 flex items-center justify-center gap-5   '>
                     <div className='logo-container h-[50px] w-[50px] bg-white-500 rounded-full flex items-center justify-center overflow-hidden shadow-2xl shadow-gray-500  '>
                         <img src={LOGO} alt="Logo" width="300" className='border-2 border-blue-500 rounded-full ' />
                     </div>
@@ -23,7 +23,7 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <div className={`${MenuOpen ? 'flex' : 'hidden'} w-full flex-col ml-20 md:flex md:w-[500px] md:ml-0 md:flex-row items-center justify-end gap-4 md:gap-6 mt-4 md:mt-0 mr-20`}>
+                <div className={`${MenuOpen ? 'flex' : 'hidden'} w-full flex-col ml-20 md:flex md:w-[500px] md:ml-0 md:flex-row items-center justify-end gap-4 md:gap-6 mt-4 md:mt-0  `}>
 
                     <Link to="/" className='nav-anchor text-black-500 text-[17px] font-bold cursor-pointer hover:text-blue-500'>Home</Link>
                     <Link to="/Build-Resume" className='nav-anchor text-black-500 text-[17px] font-bold cursor-pointer hover:text-blue-600'>Build-Resume</Link>

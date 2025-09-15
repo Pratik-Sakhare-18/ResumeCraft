@@ -18,9 +18,9 @@ const Fresher2T = () => {
         <>
            
 
-            <div className='h-[auto] w-screen flex justify-center items-center flex-col gap-10 pt-10 pb-10'>
+            <div className='h-auto w-screen flex justify-center items-center flex-col gap-10 p-4 md:p-10'>
 
-                <div className='h-[auto] bg-white shadow-xl shadow-gray-300 border-t-2 border-sky-500 rounded-[7px] w-[50%] flex justify-center items-center flex-col gap-2 pt-10 pb-10 '>
+                <div className='h-auto bg-white  shadow-xl shadow-gray-300 border-t-2 border-sky-500 rounded-[7px] w-full md:w-3/4 lg:w-[50%] flex justify-center items-center flex-col gap-2 pt-10 pb-10 '>
 
                     <div className='h-[295px]  w-[90%] border-b-2 border-sky-500 flex justify-center items-center flex-col gap-[2px]'>
                         <label htmlFor="profile-image-upload" className='cursor-pointer'>
