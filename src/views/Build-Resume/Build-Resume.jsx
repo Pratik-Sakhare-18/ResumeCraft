@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react'
 
+
 const BuildResume = () => {
 
   const [formData, setFormData] = useState({
@@ -26,15 +27,13 @@ const BuildResume = () => {
     });
   };
 
- 
-
   return (
     <>
 
       <div className="w-screen flex flex-col lg:flex-row justify-center items-center lg:items-start mt-10 gap-10 p-4">
         <div className="h-auto py-10 w-full max-w-md lg:w-[25%] bg-gradient-to-b from-blue-700 to-purple-800 shadow-2xl shadow-gray-400 rounded-[10px] flex flex-col items-center justify-center gap-3">
 
-          <h1 className='h-[60px] w-4/5 md:w-[50%] text-white font-bold text-2xl border-b-4 border-b-cyan-400 flex items-center justify-center rounded-[10px]'>Resume Controls</h1>
+          <h1 className='h-[60px] w-4/5 md:w-[60%] text-white font-bold text-2xl border-b-4 border-b-cyan-400 flex items-center justify-center rounded-[10px]'>Resume Controls</h1>
 
           <input type="text" name="name" value={formData.name} onChange={UpdatePreview} placeholder='+ Your Name' className='bg-white outline-none h-[45px] w-[65%] p-5 pt-5 rounded-[10px] placeholder:text-[14px] font-bold placeholder:text-blue-800 hover:scale-110 transition-all duration-1000 ease-in-out'></input>
           <input type="email" name="email" value={formData.email} onChange={UpdatePreview} placeholder='+ Email' className='bg-white outline-none h-[45px] w-[65%] p-5 pt-5 rounded-[10px] placeholder:text-[14px] font-bold placeholder:text-blue-800 hover:scale-110 transition-all duration-1000 ease-in-out'></input>
@@ -60,7 +59,7 @@ const BuildResume = () => {
 
           <input type="text" name="skill" value={formData.skill} onChange={UpdatePreview} placeholder='+ Skills ex , Project Management' className='bg-white outline-none h-[45px] w-[65%] p-5 pt-5 rounded-[10px] placeholder:text-[14px] font-bold placeholder:text-blue-800 hover:scale-110 transition-all duration-1000 ease-in-out'></input>
 
-          <button type="button"  className='bg-gradient-to-r from-red-500 to-pink-800 text-[20px] text-white font-bold h-[45px] w-[220px] mt-5 rounded-[10px] flex items-center justify-center gap-2 cursor-pointer hover:scale-105 transition-all duration-1000 ease-in-out'><i className="fa-solid fa-download"></i> Download PDF</button>
+          <button type="button" className='bg-gradient-to-r from-red-500 to-pink-800 text-[20px] text-white font-bold h-[45px] w-[220px] mt-5 rounded-[10px] flex items-center justify-center gap-2 cursor-pointer hover:scale-105 transition-all duration-1000 ease-in-out'><i className="fa-solid fa-download"></i> Download PDF</button>
 
         </div>
 
@@ -71,7 +70,7 @@ const BuildResume = () => {
               <input type='text' name="name" value={formData.name} onChange={UpdatePreview} placeholder='Your Name' className='h-auto w-full font-bold text-center text-blue-700 text-4xl md:text-5xl caret-blue-900 outline-none placeholder:text-blue-600' />
               <input type='text' name="title" value={formData.title} onChange={UpdatePreview} placeholder='Professional Title' className='h-auto w-full font-bold text-center text-blue-950 text-xl md:text-2xl caret-blue-900 outline-none placeholder:text-blue-900 mt-2' />
               <div className='h-auto w-full flex flex-col md:flex-row items-center justify-center  md:gap-4 mt-2'>
-                <input type='email' name="email" value={formData.email} onChange={UpdatePreview} placeholder='example123@gmail.com' className='h-auto w-full md:w-[210px]  text-center placeholder:text-black text-black outline-none' />
+                <input type='email' name="email" value={formData.email} onChange={UpdatePreview} placeholder='example123@gmail.com' className='h-auto w-full md:w-[220px]  text-center placeholder:text-black text-black outline-none' />
                 <input type='tel' name="phone" value={formData.phone} onChange={UpdatePreview} placeholder='+1 234 567 890' className='h-auto w-full md:w-[150px] text-center placeholder:text-black text-black outline-none' />
                 <input type='text' name="location" value={formData.location} onChange={UpdatePreview} placeholder='city, country' className='h-auto w-full md:w-[120px] text-center placeholder:text-black text-black outline-none' />
               </div>

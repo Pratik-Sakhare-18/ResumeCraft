@@ -27,8 +27,7 @@ const Navbar = () => {
 
                     <Link to="/" className='nav-anchor text-black-500 text-[17px] font-bold cursor-pointer hover:text-blue-500'>Home</Link>
                     <Link to="/Build-Resume" className='nav-anchor text-black-500 text-[17px] font-bold cursor-pointer hover:text-blue-600'>Build-Resume</Link>
-                    <button className='pdf-btn h-[40px] w-[100px] bg-red-500 rounded-[7px] flex items-center justify-center gap-2 text-white cursor-pointer shadow-2xl shadow-gray-400 hover:bg-red-600'><i class="fa-solid fa-download"></i>PDF</button>
-                    <Link to="/login"><button className='login-btn h-[40px] w-[110px] rounded-[7px] flex items-center justify-center gap-2 text-white cursor-pointer'><i class="fa-solid fa-right-to-bracket"></i>Login</button></Link>
+                    <Link to="/login"><button className='login-btn h-[40px] w-[110px] rounded-[7px] flex items-center justify-center gap-2 text-white cursor-pointer'><i className="fa-solid fa-right-to-bracket"></i>Login</button></Link>
 
                 </div>
             </div>
